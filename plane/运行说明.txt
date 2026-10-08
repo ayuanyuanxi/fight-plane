@@ -1,0 +1,36 @@
+空战小游戏 —— 运行说明
+========================================
+
+一、运行环境
+    Python 3.8 及以上版本，并安装 Pygame 游戏库。
+
+二、安装依赖
+    在命令行中执行以下任意一条命令安装 Pygame：
+
+        pip install pygame
+
+    若使用较新的 Python（如 3.13 / 3.14）时 pip install pygame 编译失败，
+    请改用官方社区版（与 pygame 完全兼容，导入方式同样是 import pygame）：
+
+        pip install pygame-ce
+
+三、启动游戏
+    进入本 plane 文件夹，运行入口文件：
+
+        python main.py
+
+四、操作方式
+    方向键（上、下、左、右）：移动我方战机
+    空格键：发射导弹
+    任意键：在开始界面开始游戏
+    R 键：在胜利／失败结算界面重新开始
+    关闭窗口：退出游戏
+
+五、文件说明
+    main.py            程序入口
+    planeWarGame.py    游戏主控制器（主循环、状态机、碰撞、计分、绘制）
+    gameSprites.py     精灵类（背景、导弹、我方战机、敌机、BOSS）
+    gameResources.py   图片与字体加载工具
+    config.py          全部常量配置（无魔法数值）
+    *.png              游戏所需的图片资源
+    课程设计报告.docx   课程设计报告
